@@ -1,8 +1,10 @@
 {
+  "defaultSeverity": "error",
   "rulesDirectory": ["node_modules/@nrwl/workspace/src/tslint", "node_modules/codelyzer"],
   "linterOptions": {
     "exclude": ["**/*"]
   },
+
   "rules": {
     "arrow-return-shorthand": true,
     "callable-types": true,
@@ -14,7 +16,7 @@
     "forin": true,
     "import-blacklist": [true, "rxjs/Rx", ["rxjs/(?!operators|testing)"]],
     "interface-over-type-literal": true,
-    "member-access": false,
+    "member-access": true,
     "member-ordering": [
       true,
       {
@@ -73,6 +75,25 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+    "comment-format": [true, "check-space"],
+    "label-position": true,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "quotemark": [true, "single"],
+    "use-life-cycle-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true,
+    "array-type": false,
+    "arrow-parens": false,
+    "contextual-lifecycle": true,
+    "interface-name": false,
+    "max-classes-per-file": false,
+    "max-line-length": [true, 140],
+    "no-consecutive-blank-lines": true,
+    "no-redundant-jsdoc": true,
+    "no-var-requires": false,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "ordered-imports": false,
+    "trailing-comma": false
   }
 }
