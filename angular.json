@@ -5,7 +5,14 @@
       "projectType": "application",
       "schematics": {
         "@nrwl/angular:component": {
-          "style": "scss"
+          "changeDetection": "OnPush",
+          "style": "scss",
+          "displayBlock": true
+        },
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "scss",
+          "displayBlock": true
         }
       },
       "root": "apps/client",
@@ -76,10 +83,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/client/tsconfig.app.json",
-              "apps/client/tsconfig.spec.json"
-            ],
+            "tsConfig": ["apps/client/tsconfig.app.json", "apps/client/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!apps/client/**/*"]
           }
         },
