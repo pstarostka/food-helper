@@ -5,5 +5,9 @@
     "types": [],
     "experimentalDecorators": true
   },
+  "angularCompilerOptions": {
+    "strictInjectionParameters": true,
+    "strictTemplates": true
+  },
   "files": ["src/main.ts", "src/polyfills.ts"]
 }
