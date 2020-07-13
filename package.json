@@ -31,7 +31,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --stage && nx lint",
+      "pre-commit": "pretty-quick --stage",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "nx affected:lint & nx affected:test"
     }
