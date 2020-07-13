@@ -33,7 +33,7 @@
     "hooks": {
       "pre-commit": "pretty-quick --stage && nx lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "nx format:check && nx lint & nx test"
+      "pre-push": "nx affected:lint & nx affected:test"
     }
   },
   "commitlint": {
