@@ -13,6 +13,7 @@
     "deprecation": {
       "severity": "warn"
     },
+    "typedef": [true, "call-signature", "property-declaration"],
     "forin": true,
     "import-blacklist": [true, "rxjs/Rx", ["rxjs/(?!operators|testing)"]],
     "interface-over-type-literal": true,
