@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UiSharedModule } from './../../../../libs/ui/shared/src/lib/ui-shared.module';
+import { UiSharedModule } from '@food-helper/ui/shared';
 import { AppComponent } from './app.component';
 
 @NgModule({
