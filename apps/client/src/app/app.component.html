@@ -1,5 +1,5 @@
 <div [class]="'theme-wrapper ' + (theme$ | async)">
-  <mat-sidenav-container>
+  <mat-sidenav-container fullscreen>
     <mat-sidenav #sidenav mode="push"> Pop! </mat-sidenav>
     <food-helper-header (menuOpen)="sidenav.open()"></food-helper-header>
   </mat-sidenav-container>

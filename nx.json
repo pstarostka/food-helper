@@ -31,6 +31,9 @@
     },
     "ui-shared": {
       "tags": []
+    },
+    "api": {
+      "tags": []
     }
   }
 }
