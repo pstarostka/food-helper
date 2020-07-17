@@ -1,9 +1,3 @@
-/*
-  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
-  It is not intended to be used to perform a compilation.
-
-  To learn more about this file see: https://angular.io/config/solution-tsconfig.
-*/
 {
   "files": [],
   "references": [
@@ -15,10 +9,19 @@
     },
     {
       "path": "./apps/client-e2e/tsconfig.json"
+    },
+    {
+      "path": "./ui-shared/tsconfig.lib.json"
+    },
+    {
+      "path": "./ui-shared/tsconfig.spec.json"
     }
   ],
   "compilerOptions": {
     "baseUrl": ".",
-    "rootDir": "."
+    "rootDir": ".",
+    "paths": {
+      "@food-helper/ui/shared": ["libs/ui/shared/src/index.ts"]
+    }
   }
 }
