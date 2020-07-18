@@ -22,4 +22,4 @@ jobs:
     - name: Build
       run: dotnet build ./apps/api/food-helper.api/ --configuration Release --no-restore
     - name: Test
-      run: dotnet test ./apps/api/food-helper.api/ --no-restore --verbosity normal
+      run: dotnet test ./apps/api/tests/food-helper.api.tests/ --no-restore --verbosity normal
