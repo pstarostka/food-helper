@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HamburgerButtonComponent } from './../hamburger-button/hamburger-button.component';
 import { HeaderComponent } from './header.component';
 
 describe('HeaderComponent', () => {
@@ -9,8 +11,8 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent],
-      imports: [MatToolbarModule, MatButtonModule]
+      declarations: [HeaderComponent, HamburgerButtonComponent],
+      imports: [MatToolbarModule, MatButtonModule, MatIconModule]
     }).compileComponents();
   }));
 

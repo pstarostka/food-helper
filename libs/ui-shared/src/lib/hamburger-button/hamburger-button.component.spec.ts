@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HamburgerButtonComponent } from './hamburger-button.component';
 
 describe('HamburgerButtonComponent', () => {
@@ -8,9 +7,8 @@ describe('HamburgerButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HamburgerButtonComponent ]
-    })
-    .compileComponents();
+      declarations: [HamburgerButtonComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
