@@ -1,8 +1,8 @@
 <div [class]="'theme-wrapper ' + (theme$ | async)">
-  <mat-drawer-container class="example-container" fullscreen>
-    <mat-drawer #drawer>I'm a drawer</mat-drawer>
+  <mat-drawer-container class="example-container" fullscreen autosize>
+    <mat-drawer #drawer mode="side">I'm a drawer</mat-drawer>
     <mat-drawer-content>
-      <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+      <food-helper-header (menuOpen)="drawer.toggle()" [appTitle]="title"></food-helper-header>
     </mat-drawer-content>
   </mat-drawer-container>
 </div>

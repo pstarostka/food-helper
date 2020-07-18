@@ -2,13 +2,14 @@ import { async, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UiSharedModule } from '@food-helper/ui-shared';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent],
-      imports: [MatButtonModule, MatSidenavModule, BrowserAnimationsModule]
+      imports: [MatButtonModule, MatSidenavModule, BrowserAnimationsModule, UiSharedModule]
     }).compileComponents();
   }));
 
