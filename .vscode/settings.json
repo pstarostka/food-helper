@@ -1,0 +1,4 @@
+{
+  "csharp.format.enable": true,
+  "dotnet-test-explorer.testProjectPath": "./apps/**/*tests.@(csproj|vbproj|fsproj)"
+}

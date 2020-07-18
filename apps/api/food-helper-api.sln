@@ -1,14 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "food-helper.api", "food-helper.api\food-helper.api.csproj", "{F39BDDF0-3294-43A1-AD86-243917AD4275}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "food-helper.api", "food-helper.api\food-helper.api.csproj", "{F39BDDF0-3294-43A1-AD86-243917AD4275}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3379E02-0B97-40CC-A7F6-1CCBE9113574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E12C470D-ACB5-4C03-9D43-61EF03452008}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "food-helper.api.tests", "tests\food-helper.api.tests\food-helper.api.tests.csproj", "{EB7E3290-843D-4561-97A0-E21BA05B8737}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -30,5 +33,27 @@ Global
 		{F39BDDF0-3294-43A1-AD86-243917AD4275}.Release|x64.Build.0 = Release|Any CPU
 		{F39BDDF0-3294-43A1-AD86-243917AD4275}.Release|x86.ActiveCfg = Release|Any CPU
 		{F39BDDF0-3294-43A1-AD86-243917AD4275}.Release|x86.Build.0 = Release|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Release|x64.Build.0 = Release|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB7E3290-843D-4561-97A0-E21BA05B8737}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F39BDDF0-3294-43A1-AD86-243917AD4275} = {F3379E02-0B97-40CC-A7F6-1CCBE9113574}
+		{EB7E3290-843D-4561-97A0-E21BA05B8737} = {E12C470D-ACB5-4C03-9D43-61EF03452008}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9AEF9DA3-4FC2-4195-AE66-39C016C98F56}
 	EndGlobalSection
 EndGlobal

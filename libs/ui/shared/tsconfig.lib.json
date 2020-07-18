@@ -2,9 +2,11 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
+    "esModuleInterop": true,
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
+    "experimentalDecorators": true,
     "types": [],
     "lib": ["dom", "es2018"]
   },

@@ -12,6 +12,12 @@
         "printWidth": 200,
         "parser": "angular"
       }
+    },
+    {
+      "files": ["*.cs"],
+      "options": {
+        "tabWidth": 4
+      }
     }
   ]
 }

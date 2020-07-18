@@ -157,7 +157,25 @@
     "api": {
       "projectType": "application",
       "root": "apps/api",
-      "sourceRoot": "apps/api/food-helper.api"
+      "sourceRoot": "apps/api/food-helper.api",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/workspace:run-commands",
+          "outputs": [],
+          "options": {
+            "command": "dotnet build",
+            "cwd": "./apps/api/food-helper.api"
+          }
+        },
+        "test": {
+          "builder": "@nrwl/workspace:run-commands",
+          "outputs": [],
+          "options": {
+            "command": "dotnet test",
+            "cwd": "./apps/api/tests/food-helper.api.tests"
+          }
+        }
+      }
     }
   },
   "cli": {
