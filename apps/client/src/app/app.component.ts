@@ -7,6 +7,7 @@ import { of } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public theme$ = of('default');
+  public theme$ = of('default-theme');
   public title = 'Food Helper';
+  public menuOpen = false;
 }

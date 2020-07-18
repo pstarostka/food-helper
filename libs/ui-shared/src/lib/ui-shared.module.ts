@@ -6,12 +6,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HamburgerButtonComponent } from './hamburger-button/hamburger-button.component';
 import { HeaderComponent } from './header/header.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 const matModules = [MatSidenavModule, MatButtonModule, MatToolbarModule, MatIconModule];
 
 @NgModule({
   imports: [CommonModule, ...matModules],
-  declarations: [HeaderComponent, HamburgerButtonComponent],
-  exports: [...matModules, HeaderComponent, HamburgerButtonComponent]
+  declarations: [HeaderComponent, HamburgerButtonComponent, SideNavComponent],
+  exports: [...matModules, HeaderComponent, HamburgerButtonComponent, SideNavComponent]
 })
 export class UiSharedModule {}

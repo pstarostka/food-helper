@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output } from '@angular/core';
-
 @Component({
   selector: 'food-helper-hamburger-button',
   templateUrl: './hamburger-button.component.html',
@@ -7,9 +6,15 @@ import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output } from
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HamburgerButtonComponent implements OnInit {
-  constructor() {}
   public isActive = false;
-  @Output() public toggleMenu = new EventEmitter<void>();
+  @Output() public toggleMenu = new EventEmitter<boolean>();
 
-  ngOnInit(): void {}
+  constructor() {}
+
+  public ngOnInit(): void {}
+
+  public toggleMenuOpen(): void {
+    this.isActive = !this.isActive;
+    this.toggleMenu.emit(this.isActive);
+  }
 }

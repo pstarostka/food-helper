@@ -1,3 +1,4 @@
 <div [class]="'theme-wrapper ' + (theme$ | async)">
-  <food-helper-header [appTitle]="title"></food-helper-header>
+  <food-helper-header [appTitle]="title" (menuOpen)="menuOpen = $event"></food-helper-header>
+  <food-helper-side-nav [open]="menuOpen"></food-helper-side-nav>
 </div>

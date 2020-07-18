@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent implements OnInit {
-  @Output() public menuOpen = new EventEmitter<void>();
+  @Output() public menuOpen = new EventEmitter<boolean>();
   @Input() public appTitle?: string;
 
   constructor() {}
