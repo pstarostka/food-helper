@@ -1,0 +1,68 @@
+:host {
+  display: block;
+}
+
+.hamburger {
+  padding: 1em;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0;
+  border: 0;
+  outline: none;
+
+  &__box {
+    width: 24px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+  }
+
+  @mixin hamburger-line {
+    height: 0.2em;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+  }
+
+  &__inner {
+    @include hamburger-line();
+    transition: background-color 0.1s 0.1s ease-in-out;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before,
+    &::after {
+      @include hamburger-line();
+      transition: transform 0.2s 0.1s ease-in-out;
+
+      content: '';
+    }
+
+    &::before {
+      top: -6px;
+    }
+
+    &::after {
+      top: 6px;
+    }
+  }
+
+  &--active {
+    .hamburger {
+      &__inner {
+        background-color: transparent;
+
+        &::before {
+          transform: translateY(6px) rotate(45deg);
+        }
+
+        &::after {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

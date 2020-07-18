@@ -1,7 +1,8 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button (click)="menuOpen.emit()">
+  <food-helper-hamburger-button (toggleMenu)="menuOpen.emit()"></food-helper-hamburger-button>
+  <!-- <button mat-icon-button (click)="menuOpen.emit()">
     <mat-icon>menu</mat-icon>
-  </button>
+  </button> -->
   <span>{{ appTitle }}</span>
   <span class="example-spacer"></span>
   <button mat-icon-button>

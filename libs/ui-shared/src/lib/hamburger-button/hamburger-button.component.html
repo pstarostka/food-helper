@@ -1,0 +1,5 @@
+<button class="hamburger" [ngClass]="{ 'hamburger--active': isActive }" (click)="isActive = !isActive; toggleMenu.emit()">
+  <span class="hamburger__box">
+    <span class="hamburger__inner"></span>
+  </span>
+</button>
