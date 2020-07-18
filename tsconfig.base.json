@@ -12,7 +12,7 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "types": ["node", "jest"],
-    "lib": ["es2018"],
+    "lib": ["dom", "es2018"],
     "declaration": true,
     "baseUrl": ".",
     "rootDir": ".",
